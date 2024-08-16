@@ -87,6 +87,11 @@ body{
     margin-top: 400px;
 }
 
+.Slogan_Brand_mobile{
+    display: none;
+}
+
+
 #Brand {
     color: var(--colorCenter);
     font-size: 80px;
@@ -159,6 +164,11 @@ body{
     margin-top: 100px;
 }
 
+.main3 span {
+    color: var(--colorCenter);
+    font-weight: bold;
+}
+
 .card{
     border: none;
     padding: 30px;
@@ -195,6 +205,11 @@ body{
 .infor_CEO{
     margin-top: 5%;
     padding: 40px;
+}
+
+.infor_CEO h1 {
+    font-weight: bold;
+    color: var(--colorCenter);
 }
 
 .main7{
@@ -267,7 +282,7 @@ body{
 
 
 .Slogan_Brand h5 {
-    font-size: 14px;
+    font-size: 20px;
 }
 
     .main_form {
@@ -298,7 +313,7 @@ body{
     }
 
     .header {
-        height: unset;
+        height: 100vh;
     }
 
     .header_1 {
@@ -321,6 +336,11 @@ body{
     .Slogan_Brand {
         margin-top: 2px;
     }
+
+    .Slogan_Brand_mobile{
+        display: block;
+        height: 100vh;
+    }
     
     #Brand {
         color: var(--colorCenter);
@@ -328,8 +348,26 @@ body{
         text-transform: uppercase;
     }
 
+    .Slogan_Brand_mobile h1{
+        width: 100%;
+        font-size: 50px;
+        color: var(--colorCenter);
+        font-weight: bold;
+    }
+
+    .Slogan_Brand_mobile_more{
+        border-radius: 30px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        margin-top: 30%;
+    }
+
+    .Slogan_Brand_mobile_more img {
+        border-radius: 20px;
+    }
+
     .main {
-        margin-top: 0px;
+        margin-top: 1000px;
     }
 
     .main_form {
@@ -338,6 +376,14 @@ body{
 
     .main3 h1{
         font-size: 22px;
+    }
+
+    .main3 p {
+        display: none;
+    }
+
+    .main3 .card {
+        height: auto;
     }
 
     .btn_advise{

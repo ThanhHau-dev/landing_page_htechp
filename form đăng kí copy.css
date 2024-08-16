@@ -1,3 +1,7 @@
+:root {
+    --colorCenter: #ffc107
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -7,63 +11,90 @@
 body{
     font-family: Open Sans, sans-serif;
 }
-.header_menu{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    border-radius: 25px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    margin-bottom: 100px;
-    height: 150px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: white;
-    overflow: auto; /* Cung cấp thanh cuộn nếu nội dung dài hơn */
-    background-color: #f0f0f0;
-    padding: 1px;
-    width: 100%;
-}
-
-.header_mobile {
+#logo_mobile {
     display: none;
 }
 
-.navbar{
-    margin-top: 50px;
-}
-
-.nav-link {
-    color:black;
-}
-
-.nav-link:hover{
-    font-size: 20px;
-    color: yellow;
-}
-
-.header_menu img{
-   width: 40%;
-   height: 100px;
-   object-fit: cover;
-}
-
-.header_menu a{
-    font-size: 20px;
-}
-
-.btn_advise{
-    border-radius: 30px;
-    font-size: 19px;
+.btn {
+    border-radius: 25px;
     color: white;
-    margin-top: 62px;
 }
 
-.header_btn_start{
-    padding-left: 50px;
-    padding-right: 50px;
-    border-radius: 30px;
-    font-size: 19px;
+.header {
+    background-image: url(/img/img-banner.png);
+    background-repeat: no-repeat;
+    background-position: 400px 0px;
+    background-size: 600px;
+}
 
+.header_1 {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: height 0.3s, font-size 0.3s; /* Hiệu ứng chuyển đổi */
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); */
+    height: auto;
+
+}
+
+/* css cuộn trang cho header_1 */
+.header_1.shrink {
+    height: 80px; /* Chiều cao sau khi cuộn */
+    font-size: 0.9em; /* Thu nhỏ font-size nếu cần */
+    background-color: white;
+}
+
+.header_1.shrink img {
+    width: 40%;
+}
+
+/* ------------------------------------------------- */
+
+.header_1 img {
+    width: 80%;
+}
+
+.navbar {
+    border-radius: 30px;
+    background-color: rgb(128, 128, 128);
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    border-radius: 25px;
+    background-color: white;
+    color: var(--colorCenter);
+    padding: 10px;
+}
+
+.header_2 {
+    margin-top: 150px;
+}
+
+.header_2 h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.Slogan_Brand {
+    margin-top: 400px;
+}
+
+#Brand {
+    color: var(--colorCenter);
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.header_2_btn {
+    margin-top: 40px;
+}
+
+.header_2 img {
+    width: 100%;
 }
 
 .main {
@@ -107,11 +138,18 @@ body{
 
 /* repponse cho mobile 700px */
 @media (max-width: 700px) {
-    .header_menu {
+    .header {
         display: none;
     }
 
+    .main {
+        height: 100vh;
+        margin-top: 25%;
+        text-align: center;
+    }
+
     .main h4{
-        font-size: 10px;
+        font-size: 15px;
+        margin-top: 10px;
     }
 }

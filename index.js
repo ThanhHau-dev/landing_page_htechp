@@ -19,7 +19,7 @@ const buttons = document.querySelectorAll('.btn');
         menua.forEach(menua => {
             menua.addEventListener('click', function() {
                 // Điều hướng sang trang mới
-                window.location.href = 'warning.html';
+                window.location.href = 'form đăng kí.html';
             });
         });
 
