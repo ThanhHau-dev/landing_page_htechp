@@ -79,6 +79,11 @@ _:-webkit-full-screen:not(:root:root), .selector { property:value; }
     color:#000;
    }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .demo{ display: block; }
+    
+
 /* ------------------------------------------------------------------------------------- */
 
 *{
@@ -381,10 +386,22 @@ body{
 /* reponse cho mobile */
 @media (max-width: 700px) {
 
-    body{
-        background: -webkit-linear-gradient(135deg, #ffd700, #ffffff 80%), linear-gradient(45deg, #ffd700, #ffffff 80%);
-        background-blend-mode: screen;
-    }
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .demo{ display: block; }
+        
+        
+                body {
+                background: white;
+        }
+        
+        
+                .main {
+                  background: linear-gradient(135deg, #ffd700, #ffffff 80%), linear-gradient(45deg, #ffd700, #ffffff 80%);
+            background-blend-mode: screen;
+        
+        }
+        
+
 
     #logo_mobile {
         display: block;
